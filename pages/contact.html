@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeeksforGeeks-LPU | Contact Us</title>
+    <link rel="stylesheet" href="../css/contactstyle.css"/>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../public/icons/favicon_io/favicon-16x16.png"
+    />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-wrapper">
+        <div class="brand">
+          <img src="../public/icons/favicon_io/logo192.png" alt="" />
+        </div>
+        <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+        <ul class="nav-list">
+          <li class="">
+            <a href="../index.html">Home</a>
+          </li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/events.html">Events</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li>
+            <button class="btn"><a href="../pages/join.html">Join</a></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   <!---Main Content-->
+    <section>
+        <div class="containment">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="../public/images/Location.png"></span>
+                            <span>Lovely Professional University<br>
+                                Jalandhar, Punjab<br>
+                                144402</span>
+                        </li>
+                        <li>
+                            <span><img src="../public/images/Email.png"></span>
+                            <span>geeksforgeekslpu@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><img src="../public/images/Phone.png"></span>
+                            <span>+91-8700000000</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/GeeksforGeeksChapterLPU/"><img src="../public/images/facebook-app-symbol.png" style="width: 25px; height: 25px"></a></li>
+                    <li><a href="https://www.instagram.com/geeksforgeekslpu/"><img src="../public/images/instagram.png" style="width: 25px; height: 25px"></a></li>
+                    <li><a href="https://twitter.com/GFG_LPU"><img src="../public/images/twitter.png" style="width: 33px; height: 33px"></a></li>
+                    <li><a href="https://www.youtube.com/c/GeeksforGeeksLPU"><img src="../public/images/youtube.png" style="width: 30px; height: 30px"></a></li>
+                    <li><a href="https://www.linkedin.com/company/geeksforgeekslpu/mycompany/"><img src="../public/images/linkedin.png" style="width: 25px; height: 25px"></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <form method="POST" name="google-sheet">
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="First Name" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="Last Name" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" name="Email" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="tel" name="Mobile Number" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required name="Message"></textarea>
+                        <span>Write Your Message Here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby1hgdOi3OXDxt_lfqNtYojwV07nvj06N9A6vv1LgUJH5LqbTgsaSMn658rBIJuLhI/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Your Registration is Successful! We Will Contact You Soon."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <!-- footer starts here -->
+   <footer>
+        <div class="container footer-wrapper">
+            <div class="left">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a class="fb" href="https://www.facebook.com/geeks.forgeeks.10/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a class="insta" href="https://www.instagram.com/geeksforgeekslpu/" target="_blank"><i class="fa fa-instagram fa-2x" ></i></a>
+                    <a class="twitter" href="https://twitter.com/GFG_LPU" target="_blank"><i class="fa fa-twitter fa-2x" ></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/geeksforgeekslpu/mycompany/" target="_blank"><i class="fa fa-linkedin fa-2x" ></i></a>
+                    <a class="youtube" href="https://www.youtube.com/c/GeeksforGeeksLPU" target="_blank"><i class="fa fa-youtube fa-2x" ></i></a>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <h3>Contact Us</h3>
+                <div class="contact-items">
+                    <p>geeksforgeekslpu@gmail.com</p>
+                    <!-- <p>+91-8700000000</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <p>Copyright &copy; GeeksForGeeks LPU. All Rights Reserved  </p>
+        </div>
+    </footer>
+    <script src="../js/anime.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
