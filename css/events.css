@@ -1,0 +1,147 @@
+*{
+    margin: 0p;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.col-51 p{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rate1{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-top: -15px;
+}
+.rate2{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-top: -15px;
+}
+.rate3{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-top: -15px;
+}
+.enroll{
+    padding: 10px 167.3px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.enroll:hover{
+    background: darkgreen;
+    color: white;
+}
+.col-51 h3{
+    color: yellowgreen;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+.row_row-2{
+    background: rgb(22,22,22);
+}
+.heading{
+    padding-top: 60px;
+}
+.heading{
+    position: relative;
+    background: rgb(22,22,22);
+}
+.heading h2{
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.heading h2::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.heading h2:hover::after{
+    width: 40%;
+}
+.row-2_bcg{
+    padding-top: 60px;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(22,22,22);
+    position: relative;
+    margin-bottom: -60px;
+}
+.row-4_bcg{
+    padding-top: 60px;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(22,22,22);
+    position: relative;
+
+}
+#product_list{
+    transition: transform 0.4s;
+}
+#product_list:hover {
+    transform: scale(1.06); 
+}
+#product_list_past{
+    transition: transform 0.4s;
+}
+#product_list_past{
+    filter: grayscale(100%);
+}
+#product_list_past:hover {
+    transform: scale(1.06); 
+}
+.col-5{
+    flex-basis: 10%;
+    padding: 10px;
+    min-width: 440px;
+    margin-bottom: 50px;
+}
+.col-51{
+    transition: transform 0.3s;
+}
+.col-51:hover{
+    transform: translateY(-10px);
+}
+.col-5 img{
+    width: 100%;
+}
+

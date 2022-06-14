@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about1{
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 20px;
+}
+.about1 h2{
+    font-size: 1.6rem;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+}
+.about2{
+    margin-top: 30px;
+}
+.about2 h1{
+    text-align: center;
+}
+
+.about2 p{
+    text-align: justify;
+    line-height: 1.6;
+}
+@media (max-width: 730px)
+    {
+        .footer-wrapper{
+        flex-direction: column;
+    }
+    .left{
+        padding-bottom: 50px
+    }
+}
